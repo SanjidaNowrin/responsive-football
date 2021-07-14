@@ -52,10 +52,9 @@ header{
     font-size: 16px;
     color: #FFFFFF;
 }
-.button img{
-    width: 24px;
-    height: 24px;
+.button i{
     margin-left: 8px;
+    color: white;
 }
 .right-side img{
     width: 556.01px;
@@ -148,5 +147,53 @@ header{
 /* Winning Section end 
 -----*/
 /* footer start */
+.last-section,.last-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.last-section img{
+    width: 483.87px;
+    height: 110px;
+    margin-bottom: 20px;
+}
 
+/* .icon {
+    color: #969BAB;
+    font-size: 20px;
+}
+.icon .fab{
+    background-color: #E7E7E8;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    padding: 10px;
+    margin: 0px 14px;   
+  }  */
+.social-icons-list ul{
+    text-align: center;
+    padding-left: 0px;
+}
+.social-icons-list ul li{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: #E7E7E8;
+    border-radius: 100%;
+    margin: 0px 14px;
+}
+.social-icons-list ul li a{
+    display: block;
+    color: #969BAB;
+    font-size: 20px;
+}
+.social-icons-list ul li a{
+    line-height: 40px;
+}
+.last-text p{
+    font-weight:100;
+    font-size: 22px;
+    margin: 20px 0px;
+}
 

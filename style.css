@@ -62,11 +62,14 @@ header{
     height: 438px;
     margin-top: 135px;
 }
-/* top players section start */
+/*----------
+ top players section start 
+ ---------*/
 .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 30px;
+    margin-bottom: 40px;
 }
 .player{
     background: #FFFFFF;
@@ -90,4 +93,31 @@ header{
     text-align: justify;
 }
 /* top players section end */
+
+/* -----------
+    Teams start
+---------*/
+.section-title{
+    font-weight: bold;
+    font-size: 50px;
+    color: #2D25A0;
+    text-transform:uppercase;
+}
+.teams{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-row-gap: 10px;
+    background: #FFFFFF;
+    padding:15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin-bottom: 50px;
+}
+.team img{
+    width: 90%;
+}
+/* -----------
+    Teams end
+---------*/
+
+
 

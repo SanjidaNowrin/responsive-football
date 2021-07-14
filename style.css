@@ -11,17 +11,22 @@ main{
     align-items: center;
 }
 .container{
-    margin-left: 180px;
-    margin-right: 210px;
+    /* margin-left: 180px;
+    margin-right: 210px; */
+    width: 1050px;
 }
 /* header start */
 header{
     height: 695px;
-    width: 100%;
+    width:100%;
     background-color: #2D25A0;
     display: flex;
     justify-content: space-around;
     margin-bottom: 70px;
+}
+.heading:hover img{
+    transform: rotate(360deg) scale(0.5);
+    transition: transform 2s ease-in-out;
 }
 .left-side h1{
    margin: 0;
@@ -47,10 +52,14 @@ header{
     background-color: #0e5f0e;
     cursor: pointer;
 }
-.button h3{
+.button a{
     font-weight: 500;
     font-size: 16px;
     color: #FFFFFF;
+    text-decoration: none;
+}
+.button a:hover{
+    color: red;
 }
 .button i{
     margin-left: 8px;
@@ -68,18 +77,18 @@ header{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 30px;
+    grid-row-gap: 27px;
     margin-bottom: 40px;
 }
 .player{
     background: #FFFFFF;
-    width: 330px;
     height: 474px;
     padding:15px;
-    margin-bottom: 27px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
 .player-image img{
-    width: 100%;
+    width: 300px;
+height: 256px;
 }
 .player-info h2{
     font-weight: bold;
@@ -130,7 +139,6 @@ header{
 .winning-image img{
     width: 600px;
     height: 327px;
-
 }
 .winning-title h1{
     font-weight: bold;
@@ -147,7 +155,7 @@ header{
 /* Winning Section end 
 -----*/
 /* footer start */
-.last-section,.last-info{
+.last-section{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,19 +165,6 @@ header{
     height: 110px;
     margin-bottom: 20px;
 }
-
-/* .icon {
-    color: #969BAB;
-    font-size: 20px;
-}
-.icon .fab{
-    background-color: #E7E7E8;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 100px;
-    padding: 10px;
-    margin: 0px 14px;   
-  }  */
 .social-icons-list ul{
     text-align: center;
     padding-left: 0px;
@@ -187,8 +182,6 @@ header{
     display: block;
     color: #969BAB;
     font-size: 20px;
-}
-.social-icons-list ul li a{
     line-height: 40px;
 }
 .last-text p{
@@ -196,4 +189,110 @@ header{
     font-size: 22px;
     margin: 20px 0px;
 }
-
+/* footer end */
+/* ---------
+Media Queries 
+-------------*/
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    header{
+        height: 695px;
+        max-width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 47px;
+    }
+    .left-side,.right-side{
+        margin-left: 26px;
+    }
+    .left-side h1{
+        font-size: 36px;
+        margin-top: 90px;
+    }
+    .right-side img{
+        width: 329px;
+        height: 259.17px;
+        margin-top: 60px;
+    }
+    .players,.teams,.winning-section{
+        grid-template-columns: repeat(1,330px);
+        justify-content: center;
+    }
+    .player{
+        height: 474px;
+    }
+    .team{
+        display: flex;
+        justify-content: center;
+    }
+    .team img{
+        width: 70%;
+    }
+    .section-title{
+        font-size: 30px;
+        text-align: center;
+    }
+    .last-section img{
+        width: 200px;
+        height: 80px;
+    }
+    .winning-section{
+        width: 90%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .winning-image img{
+        width: 300px;
+        height: 180px;
+    }
+    .winning-title h1{
+        font-size: 28px;
+    }
+}
+/* tablet devices */
+@media  only screen and (min-width:688px) and (max-width:992px){
+    header{
+        height: auto;
+        max-width: 100% !important;
+        display: flex;
+        flex-direction: column;
+    }
+    .left-side,.right-side{
+        margin-left: 26px;
+        margin-bottom: 20px;
+    }
+    .left-side h1{
+        font-size: 40px;
+        margin-top: 90px;
+    }
+    .right-side img{
+        width: 456.01px;
+        height: 338px;
+        margin-top: 135px;
+    }
+    .container{
+        width: 100%;
+    }
+    .players,.teams{
+        grid-template-columns: repeat(2,330px);
+        justify-content: center;
+    }
+    .section-title{
+        text-align: center;
+    }
+    .winning-section{
+        width: 90%;
+        margin: 0 auto;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .winning-image img{
+        width: 400px;
+        height: 200px;
+    }
+    .winning-title h1{
+        font-size: 40px;
+    }
+}       

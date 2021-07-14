@@ -197,6 +197,7 @@ Media Queries
 @media only screen and (max-width:688px) {
     .container{
         width: 100%;
+        overflow: hidden;
     }
     header{
         height: 695px;
@@ -254,6 +255,10 @@ Media Queries
 }
 /* tablet devices */
 @media  only screen and (min-width:688px) and (max-width:992px){
+    .container{
+        width: 100%;
+        overflow: hidden;
+    }
     header{
         height: auto;
         max-width: 100% !important;
@@ -272,9 +277,6 @@ Media Queries
         width: 456.01px;
         height: 338px;
         margin-top: 135px;
-    }
-    .container{
-        width: 100%;
     }
     .players,.teams{
         grid-template-columns: repeat(2,330px);
